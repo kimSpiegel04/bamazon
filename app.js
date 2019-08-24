@@ -69,9 +69,9 @@ function viewLowStock() {
                 `Item ID: ${res[i].item_id} || Item: ${res[i].product_name} || Price: $${res[i].price} Stock Quant.: ${res[i].stock_quantity}`
             );
             console.log('================================================');
-            managerBusiness();
-        }
 
+        }
+        managerBusiness();
     });
 
 }
