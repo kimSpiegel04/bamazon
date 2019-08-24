@@ -106,9 +106,10 @@ function addInventory() {
                 connection.query(updated, [answer.product], function(err,results){
                     console.log('Update successful. New stock quantity for ' + results[0].product_name + ' is ' + results[0].stock_quantity);
                     console.log('================================================');
+                    managerBusiness();
                 });
 
-            managerBusiness();
+
             });
         });
 
